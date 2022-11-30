@@ -1,0 +1,710 @@
+<html>
+<head>
+	<title>Directo</title>
+	<meta content='width=device-width, user-scalable=0' name='viewport' />
+	<link id="css" rel="stylesheet" type="text/css" href="css/azul.css">
+	<link href="iconos/icono.png" type="image/x-icon" rel="shortcut icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body onload="javascript:Intro();">
+
+	<img id="logo" class="intrologo" src="iconos/logobeta.png">
+
+	<table id="intro" class="intro">
+		<tr>
+			<td>
+				<center><br><br><br><img class="introcargando" src="iconos/cargando.gif"></center>
+			</td>
+		</tr>
+	</table>
+
+	<table id="indicador" class="indicadorf">
+		<tr><td colspan="3" id="fbuscador">Google</td></tr>
+		<tr height="25%">
+			<td id="funo"></td>
+			<td id="fdos"></td>
+			<td id="ftres"></td>
+		</tr>
+		<tr height="25%">
+			<td id="fcuatro"></td>
+			<td id="fcinco"></td>
+			<td id="fseis"></td>
+		</tr>
+		<tr height="25%">
+			<td id="fsiete"></td>
+			<td id="focho"></td>
+			<td id="fnueve"></td>
+		</tr>
+	</table>
+
+	<table id="registrar" class="registrarf">
+		<tr height="10%">
+			<td rowspan="3" width="5%"></td><td width="95%"></td>
+		</tr>
+		<tr height="15%">
+			<td><h1>Crea tu página de inicio</h1></td>
+		</tr>
+		<tr height="75%">
+			<td valign="top">
+					<ul id="lregistro">
+						<form name="fregistro">
+
+						<li>Color<br>
+							<select id="ocolor" onclick="javascript:Setcolor();">
+								<option value="azul">Azul</option>
+								<option value="index">Verde</option>
+								<option value="lila">Lila</option>
+								<option value="rojo">Rojo</option>
+								<option value="naranja">Naranja</option>
+								<option value="negro">Negro</option>
+							</select>
+						</li>
+						<li>Buscador<br>
+							<select id="obuscador" onclick="javascript:Formulario();">
+								<option value="Google">Google</option>
+								<option value="Yahoo">Yahoo</option>
+								<option value="Bing">Bing</option>
+							</select>
+						</li>
+
+						<li>Enlace 1
+							<select id="duno" onchange="javascript:Dinamico(this.id,'ouno');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="ouno" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 2
+							<select id="ddos" onchange="javascript:Dinamico(this.id,'odos');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="odos" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 3
+							<select id="dtres" onchange="javascript:Dinamico(this.id,'otres');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="otres" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 4
+							<select id="dcuatro" onchange="javascript:Dinamico(this.id,'ocuatro');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="ocuatro" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 5
+							<select id="dcinco" onchange="javascript:Dinamico(this.id,'ocinco');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="ocinco" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 6
+							<select id="dseis" onchange="javascript:Dinamico(this.id,'oseis');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="oseis" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 7
+							<select id="dsiete" onchange="javascript:Dinamico(this.id,'osiete');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="osiete" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 8
+							<select id="docho" onchange="javascript:Dinamico(this.id,'oocho');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="oocho" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+
+						<li>Enlace 9
+							<select id="dnueve" onchange="javascript:Dinamico(this.id,'onueve');">
+								<option value="vacio">Vacío</option>
+								<option value="bancos">Bancos</option>
+								<option value="comercio">Comercio</option>
+								<option value="cinse">Cine & Series</option>
+								<option value="correo">Correo</option>
+								<option value="nube">Nube</option>
+								<option value="operadoras">Operadoras</option>
+								<option value="tecnologia">Tecnología</option>
+								<option value="television">Televisión</option>
+								<option value="redes">Redes</option>
+							</select>
+							<br><br>
+							<select id="onueve" onchange="javascript:Formulario();">
+								<option value="hueco">Vacío</option>
+							</select>
+						</li>
+						<br>
+						<li>
+							<input onclick="javascript:Guardar();" type="submit" value="Crear Página">
+						</li>
+					</ul>
+				</form>
+			</td>
+		</tr>
+	</table>
+	
+	<div id="reloj"></div>
+	<img id="editar" src="iconos/editar.png" onclick="javascript:Editar();">
+	<!-- <img id="nueva" src="iconos/nueva.png" onclick="javascript:Nueva();"> -->
+	<div id="buscador" class="buscador">
+		
+		<div id="tbuscador"></div>
+		<form id="fobuscador" method=GET action="http://www.google.com/search">
+			<INPUT TYPE=text id="texto" name=q size=31 value="">
+			<INPUT TYPE=hidden name=hl value=es>
+			<input type=image src="iconos/buscar.png" height="30px" id="buscar">
+		</form>
+	</div>
+	<div id="uno" class="enlace"><a id="auno" href=""><img id="iuno" src="enlaces/hueco.png"><h1 id="tluno"></h1></a></div>
+	<div id="dos" class="enlace"><a id="ados" href=""><img id="idos" src="enlaces/hueco.png"><h1 id="tldos"></h1></a></div>
+	<div id="tres" class="enlace"><a id="atres" href=""><img id="itres" src="enlaces/hueco.png"><h1 id="tltres"></h1></a></div>
+	<div id="cuatro" class="enlace"><a id="acuatro" href=""><img id="icuatro" src="enlaces/hueco.png"><h1 id="tlcuatro"></h1></a></div>
+	<div id="cinco" class="enlace"><a id="acinco" href=""><img id="icinco" src="enlaces/hueco.png"><h1 id="tlcinco"></h1></a></div>
+	<div id="seis" class="enlace"><a id="aseis" href=""><img id="iseis" src="enlaces/hueco.png"><h1 id="tlseis"></h1></a></div>
+	<div id="siete" class="enlace"><a id="asiete" href=""><img id="isiete" src="enlaces/hueco.png"><h1 id="tlsiete"></h1></a></div>
+	<div id="ocho" class="enlace"><a id="aocho" href=""><img id="iocho" src="enlaces/hueco.png"><h1 id="tlocho"></h1></a></div>
+	<div id="nueve" class="enlace"><a id="anueve" href=""><img id="inueve" src="enlaces/hueco.png" onload="javascript:Recuperar();"><h1 id="tlnueve"></h1></a></div>
+
+	
+</body>
+</html>
+<script>
+
+function Color(){
+	var color = localStorage.color;
+	setTimeout( function(){
+		switch(color){
+			case "azul":
+			document.getElementById('css').href = "css/" + color + ".css";
+			break;
+			case "index":
+			document.getElementById('css').href = "css/" + color + ".css";
+			break;
+			case "lila":
+			document.getElementById('css').href = "css/" + color + ".css";
+			break;
+			case "rojo":
+			document.getElementById('css').href = "css/" + color + ".css";
+			break;
+			case "naranja":
+			document.getElementById('css').href = "css/" + color + ".css";
+			break;
+			case "negro":
+			document.getElementById('css').href = "css/" + color + ".css";
+			break;
+		}
+      },1);
+}
+
+function Setcolor(){
+
+	if(document.getElementById('css').href == "css/" + document.getElementById("ocolor").value + ".css"){
+
+	}
+	else{
+		document.getElementById('css').href = "css/" + document.getElementById("ocolor").value + ".css";
+	}
+
+}
+
+var intro = document.getElementById('intro');
+var logo = document.getElementById('logo');
+var registrar = document.getElementById('registrar');
+var indicador = document.getElementById('indicador');
+
+function Intro() {
+
+    var existe = localStorage.Directo;
+
+    Color();
+
+    setTimeout( function(){
+        if (window.sessionStorage && window.localStorage) {
+    		if (existe == 'si') {
+    			intro.className = 'introf';
+    			logo.className = 'logo';
+    			registrar.className = 'registrarf';
+    		} else {
+    			logo.className = 'fueralogo';
+    			Registrar();
+    			Formulario(); 
+    		}
+    	} else {
+    		alert('Lo siento, pero tu navegador no acepta almacenamiento local');       
+    	}
+      },2000);
+    
+}
+function Registrar() {
+    setTimeout(function(){
+            intro.className = "introf";
+            indicador.className = "indicador";
+            registrar.className = 'registrar';
+    },1); 
+}
+function Guardar() {
+	var Buscador = document.getElementById("obuscador").value;
+	localStorage["buscador"] = Buscador;
+	var Color = document.getElementById("ocolor").value;
+	localStorage["color"] = Color;
+	var Uno = document.getElementById("ouno").value;
+	localStorage["euno"] = Uno;
+	var Dos = document.getElementById("odos").value;
+	localStorage["edos"] = Dos;
+	var Tres = document.getElementById("otres").value;
+	localStorage["etres"] = Tres;
+	var Cuatro = document.getElementById("ocuatro").value;
+	localStorage["ecuatro"] = Cuatro;
+	var Cinco = document.getElementById("ocinco").value;
+	localStorage["ecinco"] = Cinco;
+	var Seis = document.getElementById("oseis").value;
+	localStorage["eseis"] = Seis;
+	var Siete = document.getElementById("osiete").value;
+	localStorage["esiete"] = Siete;
+	var Ocho = document.getElementById("oocho").value;
+	localStorage["eocho"] = Ocho;
+	var Nueve = document.getElementById("onueve").value;
+	localStorage["enueve"] = Nueve;
+	localStorage["Directo"] = "si";
+	homePage.setHomePage("file:///C:/Users/Eduardo/Desktop/Eduardo/Newface/Intro/index.html")
+	location.reload(true);
+}
+
+function Recuperar() {
+
+    var runo = localStorage.euno;
+    var rdos = localStorage.edos;
+    var rtres = localStorage.etres;
+    var rcuatro = localStorage.ecuatro;
+    var rcinco = localStorage.ecinco;
+    var rseis = localStorage.eseis;
+    var rsiete = localStorage.esiete;
+    var rocho = localStorage.eocho;
+    var rnueve = localStorage.enueve;
+    var rbuscador = localStorage.buscador;
+
+    setTimeout(function(){
+    document.getElementById('tbuscador').innerHTML = rbuscador;
+    document.getElementById('fbuscador').action = "http://www." + rbuscador + ".com/search";
+    document.getElementById('iuno').src = "enlaces/" + runo + ".png";
+    document.getElementById('idos').src = "enlaces/" + rdos + ".png";
+    document.getElementById('itres').src = "enlaces/" + rtres + ".png";
+    document.getElementById('icuatro').src = "enlaces/" + rcuatro + ".png";
+    document.getElementById('icinco').src = "enlaces/" + rcinco + ".png";
+    document.getElementById('iseis').src = "enlaces/" + rseis + ".png";
+    document.getElementById('isiete').src = "enlaces/" + rsiete + ".png";
+    document.getElementById('iocho').src = "enlaces/" + rocho + ".png";
+    document.getElementById('inueve').src = "enlaces/" + rnueve + ".png";
+
+    Enlaces(runo,"auno","tluno");
+    Enlaces(rdos,"ados","tldos");
+    Enlaces(rtres,"atres","tltres");
+    Enlaces(rcuatro,"acuatro","tlcuatro");
+    Enlaces(rcinco,"acinco","tlcinco");
+    Enlaces(rseis,"aseis","tlseis");
+    Enlaces(rsiete,"asiete","tlsiete");
+    Enlaces(rocho,"aocho","tlocho");
+    Enlaces(rnueve,"anueve","tlnueve");
+
+    },1);
+}
+
+function Formulario() {
+	var funo = document.getElementById("ouno");
+    document.getElementById("funo").innerHTML = funo.options[funo.selectedIndex].innerHTML;
+    var fdos = document.getElementById("odos");
+    document.getElementById("fdos").innerHTML = fdos.options[fdos.selectedIndex].innerHTML;
+    var ftres = document.getElementById("otres");
+    document.getElementById("ftres").innerHTML = ftres.options[ftres.selectedIndex].innerHTML;
+    var fcuatro = document.getElementById("ocuatro");
+    document.getElementById("fcuatro").innerHTML = fcuatro.options[fcuatro.selectedIndex].innerHTML;
+    var fcinco = document.getElementById("ocinco");
+    document.getElementById("fcinco").innerHTML = fcinco.options[fcinco.selectedIndex].innerHTML;
+    var fseis = document.getElementById("oseis");
+    document.getElementById("fseis").innerHTML = fseis.options[fseis.selectedIndex].innerHTML;
+    var fsiete = document.getElementById("osiete");
+    document.getElementById("fsiete").innerHTML = fsiete.options[fsiete.selectedIndex].innerHTML;
+    var focho = document.getElementById("oocho");
+    document.getElementById("focho").innerHTML = focho.options[focho.selectedIndex].innerHTML;
+    var fnueve = document.getElementById("onueve");
+    document.getElementById("fnueve").innerHTML = fnueve.options[fnueve.selectedIndex].innerHTML;
+    var fbuscador = document.getElementById("obuscador");
+    document.getElementById("fbuscador").innerHTML = fbuscador.options[fbuscador.selectedIndex].innerHTML;
+}
+function Nueva() {
+    setTimeout(function(){
+            logo.className = 'fueralogo';
+    		Registrar();
+    		Formulario();
+    		Setcolor();
+    },1); 
+}
+
+function Editar() {
+    setTimeout(function(){
+            logo.className = 'fueralogo';
+    		Registrar();
+    		Formulario();
+    		Setcolor();
+    },1); 
+}
+</script>
+<script type="text/javascript">
+
+		var Digital = new Date();
+		var hours = Digital.getHours();
+		var minutes = Digital.getMinutes();
+		var seconds = Digital.getSeconds();
+
+		var dn="PM";
+		if (hours < 12){
+			dn="AM";
+		}
+
+		var myclock = hours+":"+minutes+":"+seconds+" "+dn;
+		document.getElementById("reloj").innerHTML = myclock;
+
+	setInterval(function(){
+
+		var Digital = new Date();
+		var hours = Digital.getHours();
+		var minutes = Digital.getMinutes();
+		var seconds = Digital.getSeconds();
+
+		var dn="PM";
+		if (hours < 12){
+			dn="AM";
+		}
+
+		var myclock = hours+":"+minutes+":"+seconds+" "+dn;
+		document.getElementById("reloj").innerHTML = myclock;
+
+	}, 1000);
+
+function Dinamico(id1,id2){
+	var s1 = document.getElementById(id1);
+	var s2 = document.getElementById(id2);
+	s2.innerHTML = "";
+	if(s1.value == "vacio"){
+		var optionArray = ["hueco|Vacío"];
+	} else if(s1.value == "redes"){
+		var optionArray = ["facebook|Facebook","twitter|Twitter","tuenti|Tuenti"];
+	} else if(s1.value == "correo"){
+		var optionArray = ["outlook|Outlook","googlemail|Gmail"];
+	} else if(s1.value == "nube"){
+		var optionArray = ["googledrive|Google Drive","onedrive|Onedrive","dropbox|Dropbox"];
+	} else if(s1.value == "comercio"){
+		var optionArray = ["mediamarkt|Mediamarkt","corteingles|El corte inglés","fnac|Fnac"];
+	} else if(s1.value == "operadoras"){
+		var optionArray = ["movistar|Movistar","vodafone|Vodafone","orange|Orange","ono|Ono","yoigo|Yoigo","tuentimovil|Tuenti"];
+	} else if(s1.value == "tecnologia"){
+		var optionArray = ["samsung|Samsung","apple|Apple","sony|Sony","lg|LG","htc|HTC","bq|Bq","acer|Acer","toshiba|Toshiba","packardbell|Packardbell"];
+	} else if(s1.value == "bancos"){
+		var optionArray = ["sabadellcam|SabadellCam","sabadell|Sabadell","santander|Santander","bbva|BBVA","caixa|Caixa","bankia|Bankia"];
+	} else if(s1.value == "television"){
+		var optionArray = ["atresmedia|Atresmedia","antena3|Antena3","cuatro|Cuatro","divinity|Divinity","energy|Energy","fdf|FDF","sexta|La sexta","mediaset|Mediaset","mega|Mega","neox|Neox","telecinco|Telecinco"];
+	} else if(s1.value == "cinse"){
+		var optionArray = ["pordede|Pordede"];
+	}
+	for(var option in optionArray){
+		var pair = optionArray[option].split("|");
+		var newOption = document.createElement("option");
+		newOption.value = pair[0];
+		newOption.innerHTML = pair[1];
+		s2.options.add(newOption);
+	}
+	Formulario(); 
+}
+
+function Enlaces(valor,id,titulo){
+	switch(valor){
+		case "hueco":
+		document.getElementById(id).href = "";
+		break;
+		case "facebook":
+		document.getElementById(id).href = "http://es-es.facebook.com";
+		document.getElementById(titulo).innerHTML= "Facebook";
+		break;
+		case "twitter":
+		document.getElementById(id).href = "http://twitter.com/";
+		document.getElementById(titulo).innerHTML= "Twitter";
+		break;
+		case "tuenti":
+		document.getElementById(id).href = "http://www.tuenti.com/?m=Login";
+		document.getElementById(titulo).innerHTML= "Tuenti";
+		break;
+		case "outlook":
+		document.getElementById(id).href = "http://www.outlook.com";
+		document.getElementById(titulo).innerHTML= "Outlook";
+		break;
+		case "googlemail":
+		document.getElementById(id).href = "http://mail.google.com/";
+		document.getElementById(titulo).innerHTML= "Gmail";
+		break;
+		case "onedrive":
+		document.getElementById(id).href = "http://onedrive.live.com/about/es-es/";
+		document.getElementById(titulo).innerHTML= "Onedrive";
+		break;
+		case "googledrive":
+		document.getElementById(id).href = "http://www.drive.google.com";
+		document.getElementById(titulo).innerHTML= "Google Drive";
+		break;
+		case "mediamarkt":
+		document.getElementById(id).href = "http://www.mediamarkt.es/‎";
+		document.getElementById(titulo).innerHTML= "Mediamarkt";
+		break;
+		case "corteingles":
+		document.getElementById(id).href = "http://www.elcorteingles.es/";
+		document.getElementById(titulo).innerHTML= "El corte inglés";
+		break;
+		case "fnac":
+		document.getElementById(id).href = "http://www.fnac.es/";
+		document.getElementById(titulo).innerHTML= "Fnac";
+		break;
+		case "movistar":
+		document.getElementById(id).href = "http://www.movistar.es/";
+		document.getElementById(titulo).innerHTML= "Movistar";
+		break;
+		case "vodafone":
+		document.getElementById(id).href = "http://www.vodafone.es/";
+		document.getElementById(titulo).innerHTML= "Vodafone";
+		break;
+		case "orange":
+		document.getElementById(id).href = "http://www.orange.es/";
+		document.getElementById(titulo).innerHTML= "Orange";
+		break;
+		case "ono":
+		document.getElementById(id).href = "http://www.ono.es/";
+		document.getElementById(titulo).innerHTML= "Ono";
+		break;
+		case "yoigo":
+		document.getElementById(id).href = "http://www.yoigo.com/";
+		document.getElementById(titulo).innerHTML= "Yoigo";
+		break;
+		case "tuentimovil":
+		document.getElementById(id).href = "http://www.tuenti.com/movil";
+		document.getElementById(titulo).innerHTML= "T. movil";
+		break;
+		case "samsung":
+		document.getElementById(id).href = "http://www.samsung.com/es/";
+		document.getElementById(titulo).innerHTML= "Samsung";
+		break;
+		case "apple":
+		document.getElementById(id).href = "http://www.apple.com/es/";
+		document.getElementById(titulo).innerHTML= "Apple";
+		break;
+		case "sony":
+		document.getElementById(id).href = "http://www.sony.es/";
+		document.getElementById(titulo).innerHTML= "Sony";
+		break;
+		case "lg":
+		document.getElementById(id).href = "http://www.lg.com/es";
+		document.getElementById(titulo).innerHTML= "LG";
+		break;
+		case "htc":
+		document.getElementById(id).href = "http://www.htc.com/es/";
+		document.getElementById(titulo).innerHTML= "HTC";
+		break;
+		case "bq":
+		document.getElementById(id).href = "http://www.bq.com/";
+		document.getElementById(titulo).innerHTML= "bq";
+		break;
+		case "acer":
+		document.getElementById(id).href = "http://www.acer.es/";
+		document.getElementById(titulo).innerHTML= "Acer";
+		break;
+		case "toshiba":
+		document.getElementById(id).href = "http://www.toshiba.es/";
+		document.getElementById(titulo).innerHTML= "Toshiba";
+		break;
+		case "packardbell":
+		document.getElementById(id).href = "http://www.packardbell.es/";
+		document.getElementById(titulo).innerHTML= "Packardbell";
+		break;
+		case "sabadellcam":
+		document.getElementById(id).href = "http://www.sabadellcam.com/";
+		document.getElementById(titulo).innerHTML= "SabadellCam";
+		break;
+		case "sabadell":
+		document.getElementById(id).href = "http://www.bancsabadell.com";
+		document.getElementById(titulo).innerHTML= "Sabadell";
+		break;
+		case "santander":
+		document.getElementById(id).href = "http://www.bancosantander.es/";
+		document.getElementById(titulo).innerHTML= "Santander";
+		break;
+		case "bbva":
+		document.getElementById(id).href = "http://www.bbva.es/";
+		document.getElementById(titulo).innerHTML= "BBVA";
+		break;
+		case "caixa":
+		document.getElementById(id).href = "http://www.lacaixa.es/";
+		document.getElementById(titulo).innerHTML= "Caixa";
+		break;
+		case "bankia":
+		document.getElementById(id).href = "http://www.bankia.es/";
+		document.getElementById(titulo).innerHTML= "Bankia";
+		break;
+		case "bankia":
+		document.getElementById(id).href = "http://www.bankia.es/";
+		document.getElementById(titulo).innerHTML= "Bankia";
+		break;
+		case "atresmedia":
+		document.getElementById(id).href = "http://www.atresmedia.com/";
+		document.getElementById(titulo).innerHTML= "Atresmedia";
+		break;
+		case "antena3":
+		document.getElementById(id).href = "http://www.antena3.com/";
+		document.getElementById(titulo).innerHTML= "Antena3";
+		break;
+		case "cuatro":
+		document.getElementById(id).href = "http://www.cuatro.com/";
+		document.getElementById(titulo).innerHTML= "Cuatro";
+		break;
+		case "divinity":
+		document.getElementById(id).href = "http://www.divinity.es/";
+		document.getElementById(titulo).innerHTML= "Divinity";
+		break;
+		case "energy":
+		document.getElementById(id).href = "http://www.telecinco.es/energy/";
+		document.getElementById(titulo).innerHTML= "Energy";
+		break;
+		case "fdf":
+		document.getElementById(id).href = "http://www.telecinco.es/factoriadeficcion/";
+		document.getElementById(titulo).innerHTML= "FDF";
+		break;
+		case "sexta":
+		document.getElementById(id).href = "http://www.lasexta.com/";
+		document.getElementById(titulo).innerHTML= "La sexta";
+		break;
+		case "mediaset":
+		document.getElementById(id).href = "http://www.mediaset.es/";
+		document.getElementById(titulo).innerHTML= "Mediaset";
+		break;
+		case "mega":
+		document.getElementById(id).href = "http://mega.atresmedia.com/";
+		document.getElementById(titulo).innerHTML= "Mega";
+		break;
+		case "neox":
+		document.getElementById(id).href = "http://neox.atresmedia.com/";
+		document.getElementById(titulo).innerHTML= "Neox";
+		break;
+		case "telecinco":
+		document.getElementById(id).href = "http://www.telecinco.es/";
+		document.getElementById(titulo).innerHTML= "Telecinco";
+		break;
+		case "dropbox":
+		document.getElementById(id).href = "https://www.dropbox.com/es/";
+		document.getElementById(titulo).innerHTML= "Dropbox";
+		break;
+		case "pordede":
+		document.getElementById(id).href = "http://www.pordede.com/index2.php";
+		document.getElementById(titulo).innerHTML= "Pordede";
+		break;
+	}
+}
+</script>

@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reloj.css">
+</head>
+<body>
+<div id="reloj"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+		var Digital = new Date();
+		var hours = Digital.getHours();
+		var minutes = Digital.getMinutes();
+		var seconds = Digital.getSeconds();
+
+		var dn="PM";
+		if (hours < 12){
+			dn="AM";
+		}
+
+		var myclock = hours+":"+minutes+":"+seconds+" "+dn;
+		document.getElementById("reloj").innerHTML = myclock;
+
+	setInterval(function(){
+
+		var Digital = new Date();
+		var hours = Digital.getHours();
+		var minutes = Digital.getMinutes();
+		var seconds = Digital.getSeconds();
+
+		var dn="PM";
+		if (hours < 12){
+			dn="AM";
+		}
+
+		var myclock = hours+":"+minutes+":"+seconds+" "+dn;
+		document.getElementById("reloj").innerHTML = myclock;
+
+	}, 1000);
+</script>
